@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+env.bak/
+env/
+
+# Distribution / packaging
+.Python
+_build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written into a dist/ directory.
+#  For more information, see the PyInstaller documentation:
+#  https://pyinstaller.readthedocs.io/en/stable/when-things-go-wrong.html
+#  https://pyinstaller.readthedocs.io/en/stable/building-apps-with-one-file.html
+dist/
+build/
+*.manifest
+*.spec
+
+playground/
+playground/venv/
