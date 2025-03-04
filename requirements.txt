@@ -2,3 +2,11 @@ transformers
 datasets
 torch
 huggingface_hub
+accelerate
+evaluate
+streamlit
+sentencepiece
+scipy
+matplotlib
+opencv-python
+gradio
