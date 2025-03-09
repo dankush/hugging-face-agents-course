@@ -11,20 +11,21 @@ agent = CodeAgent(tools=[DuckDuckGoSearchTool()], model=model,
 # agent = CodeAgent(tools=[DuckDuckGoSearchTool()], model=HfApiModel(model_id="Qwen/Qwen2.5-Coder-32B-Instruct"))
 
 # Updated instructions
-instructions = """
-Create a compact Playwright test suite for https://practice.expandtesting.com/login:
-1. Use sync API, pytest
-2. Tests: 
-    - Pass: username='practice', password='SuperSecretPassword!'
-    - Fail: invalid creds, empty fields, username only
-3. Optimize for multiple runs:
-    - Single browser instance
-    - Minimal setup
-    - Clear pass/fail reporting
-4. Output JUnit XML reports for CI/CD integration.
-5. Run the tests and ensure the test results (including the JUnit XML report) are stored locally in a designated directory (e.g., 'test-results') for easy access and review.
-"""
-
+# instructions = """
+# Create a compact Playwright test suite for https://practice.expandtesting.com/login:
+# 1. Use sync API, pytest
+# 2. Tests:
+#     - Pass: username='practice', password='SuperSecretPassword!'
+#     - Fail: invalid creds, empty fields, username only
+# 3. Optimize for multiple runs:
+#     - Single browser instance
+#     - Minimal setup
+#     - Clear pass/fail reporting
+# 4. Output JUnit XML reports for CI/CD integration.
+# 5. Run the tests and ensure the test results (including the JUnit XML report) are stored locally in a designated directory (e.g., 'test-results') for easy access and review.
+# """
+# Example: https://www.youtube.com/watch?v=vGi_4jpn7Is&ab_channel=ExecuteAutomation
+instructions = "Write a Playwright test to run test in headful mode for https://practice.expandtesting.com/login website to perform login operation"
 # Run agent
 try:
     result = agent.run(instructions)
